@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Palettra Virtual Gallery</title>
+  <style>
+    body { font-family: Arial, sans-serif; margin:0; padding:0; background:#f5f5f5; }
+    header { background:#333; color:#fff; padding:20px; text-align:center; }
+    .opening-speech { padding:20px; text-align:center; font-style:italic; }
+    .gallery { display:grid; grid-template-columns:repeat(auto-fit,minmax(250px,1fr)); gap:20px; padding:20px; }
+    .art-card { background:#fff; padding:15px; border-radius:10px; box-shadow:0 2px 6px rgba(0,0,0,0.2); }
+    .art-card img.art { width:100%; border-radius:5px; }
+    .art-card img.artist { width:40px; height:40px; border-radius:50%; vertical-align:middle; margin-right:10px; }
+    .art-info { margin-top:10px; }
+    footer { background:#333; color:#fff; padding:15px; text-align:center; }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>Spring Showcase 2025</h1>
+</header>
+
+<div class="opening-speech">
+  <p>Welcome to the Spring Showcase 2025! This exhibition brings together artists from around the world to celebrate watercolor and digital art.</p>
+</div>
+
+<div class="gallery">
+  <div class="art-card">
+    <img class="art" src="https://example.com/artworks/golden-horizon.jpg" alt="Golden Horizon">
+    <div class="art-info">
+      <h3>Golden Horizon</h3>
+      <p><img class="artist" src="https://example.com/artists/taufiq-profile.jpg" alt="Taufiqur Rahman"> Taufiqur Rahman (Bangladesh)</p>
+      <p>Medium: Watercolor on Paper | Size: 12 x 16 | Year: 2025</p>
+      <p><a href="mailto:taufiq@example.com">Email</a> | <a href="https://facebook.com/taufiq.art" target="_blank">Facebook</a></p>
+    </div>
+  </div>
+</div>
+
+<footer>
+  <h3>Upcoming Exhibition</h3>
+  <p><strong>Autumn Visions 2025</strong><br>Starts on: 2025-11-15<br>Next exhibition featuring autumn-themed artworks from international artists.</p>
+</footer>
+
+</body>
+</html>
