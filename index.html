@@ -1,47 +1,42 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="bn">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Palettra Virtual Gallery</title>
-  <style>
-    body { font-family: Arial, sans-serif; margin:0; padding:0; background:#f5f5f5; }
-    header { background:#333; color:#fff; padding:20px; text-align:center; }
-    .opening-speech { padding:20px; text-align:center; font-style:italic; }
-    .gallery { display:grid; grid-template-columns:repeat(auto-fit,minmax(250px,1fr)); gap:20px; padding:20px; }
-    .art-card { background:#fff; padding:15px; border-radius:10px; box-shadow:0 2px 6px rgba(0,0,0,0.2); }
-    .art-card img.art { width:100%; border-radius:5px; }
-    .art-card img.artist { width:40px; height:40px; border-radius:50%; vertical-align:middle; margin-right:10px; }
-    .art-info { margin-top:10px; }
-    footer { background:#333; color:#fff; padding:15px; text-align:center; }
-  </style>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Palettra — Artists</title>
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/script.js" defer></script>
 </head>
 <body>
+  <header class="site-header container">
+    <h1 class="brand">Palettra Virtual Gallery</h1>
+    <p class="tagline">চলমান এক্সিবিশনের অংশগ্রহণকারী শিল্পী</p>
+  </header>
 
-<header>
-  <h1>Spring Showcase 2025</h1>
-</header>
+  <main class="container">
+    <section class="artists">
+      <div class="artists-grid">
+        <!-- Replace these placeholder images with your artist portraits -->
+        <!-- Each artist card can include alt text and data-artist-id if needed -->
+        <figure class="artist-card"><img src="images/artists/artist-1.svg" alt="Artist 1"></figure>
+        <figure class="artist-card"><img src="images/artists/artist-2.svg" alt="Artist 2"></figure>
+        <figure class="artist-card"><img src="images/artists/artist-3.svg" alt="Artist 3"></figure>
+        <figure class="artist-card"><img src="images/artists/artist-4.svg" alt="Artist 4"></figure>
+        <figure class="artist-card"><img src="images/artists/artist-5.svg" alt="Artist 5"></figure>
+        <figure class="artist-card"><img src="images/artists/artist-6.svg" alt="Artist 6"></figure>
+        <figure class="artist-card"><img src="images/artists/artist-7.svg" alt="Artist 7"></figure>
+        <figure class="artist-card"><img src="images/artists/artist-8.svg" alt="Artist 8"></figure>
+        <figure class="artist-card"><img src="images/artists/artist-9.svg" alt="Artist 9"></figure>
+      </div>
 
-<div class="opening-speech">
-  <p>Welcome to the Spring Showcase 2025! This exhibition brings together artists from around the world to celebrate watercolor and digital art.</p>
-</div>
+      <div class="cta-wrap">
+        <a class="btn btn-primary" href="exhibition.html">Visit Gallery</a>
+      </div>
+    </section>
+  </main>
 
-<div class="gallery">
-  <div class="art-card">
-    <img class="art" src="https://example.com/artworks/golden-horizon.jpg" alt="Golden Horizon">
-    <div class="art-info">
-      <h3>Golden Horizon</h3>
-      <p><img class="artist" src="https://example.com/artists/taufiq-profile.jpg" alt="Taufiqur Rahman"> Taufiqur Rahman (Bangladesh)</p>
-      <p>Medium: Watercolor on Paper | Size: 12 x 16 | Year: 2025</p>
-      <p><a href="mailto:taufiq@example.com">Email</a> | <a href="https://facebook.com/taufiq.art" target="_blank">Facebook</a></p>
-    </div>
-  </div>
-</div>
-
-<footer>
-  <h3>Upcoming Exhibition</h3>
-  <p><strong>Autumn Visions 2025</strong><br>Starts on: 2025-11-15<br>Next exhibition featuring autumn-themed artworks from international artists.</p>
-</footer>
-
+  <footer class="site-footer container">
+    <small>&copy; <span id="year"></span> Palettra</small>
+  </footer>
 </body>
 </html>
